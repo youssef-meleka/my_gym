@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Modules\User\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -10,6 +11,9 @@ use Illuminate\Support\Str;
  */
 class UserFactory extends Factory
 {
+    
+    protected $model = User::class; // Ensure this points to your custom User model
+
     /**
      * Define the model's default state.
      *

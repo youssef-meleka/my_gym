@@ -17,7 +17,7 @@ class ScheduledClassFactory extends Factory
     public function definition(): array
     {
         return [
-            'instructore_id' => \App\Models\User::factory(),
+            'instructore_id' => \App\Modules\User\Models\User::factory(),
             'class_type_id' => \App\Models\ClassType::factory(),
             'date_time' => $this->faker->dateTimeBetween('now', '+1 month'),
         ];
