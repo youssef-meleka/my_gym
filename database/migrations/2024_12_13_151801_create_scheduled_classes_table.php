@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('instructore_id')->constrained('users');
             $table->foreignId('class_type_id')->constrained();
             $table->datetime('date_time')->unique();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
